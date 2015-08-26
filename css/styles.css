@@ -1,0 +1,5 @@
+.wrapper {
+  padding: 20px; }
+  .wrapper .canvas {
+    border: 2px solid lightgrey;
+    margin: 20px 0; }

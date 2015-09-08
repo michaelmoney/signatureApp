@@ -1,7 +1,102 @@
+@import "font-awesome.css";
 .wrapper {
-  padding:20px;
+  padding: 20px;
+  background: #fff;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.25);
+  margin: 100px auto;
   .canvas {
     border:2px solid lightgrey;
     margin: 20px 0;
   }
+  button {
+    .fa {
+      margin-right: 8px;
+    }
+  }
+  .tool-tip {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+    background: #ffa84c; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    transition: all 0.5s ease;
+    width: 224px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    top: 209px;
+    left: 505px;
+    opacity: 0.85;
+    padding:7px 10px;
+    border-radius: 5px;
+
+    -webkit-animation: easeIn 2s;
+
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    span {
+      font-size:11px;
+      color:#fff;
+
+    }
+  }
+
+
 }
+
+  .logo {
+    img {
+      height: 30px;
+      position: absolute;
+      right: 5%;
+      top: 7%;
+      opacity: 0.6;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+
+  .background {
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */
+    background: #a7cfdf; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #a7cfdf 0%, #23538a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#a7cfdf), color-stop(100%,#23538a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #a7cfdf 0%,#23538a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #a7cfdf 0%,#23538a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #a7cfdf 0%,#23538a 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #a7cfdf 0%,#23538a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  }
+
+@-webkit-keyframes easeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+

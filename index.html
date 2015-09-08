@@ -5,32 +5,24 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-    <h3></h3>
-
-    <div class="overlay">
-        <canvas class="canvas" id="signatureCanvas" width="450" height="100">
-        </canvas>
+<section class="background">
+    <div class="logo">
+        <img src="img/logo.png" alt="Michael Money logo" />
     </div>
-
-    <button id="clrBtn" class="btn btn-lg btn-primary">Clear</button>
-    <button id="saveBtn" class="btn btn-lg btn-primary">Save</button>
-
-</div>
-
-
-<div class="wrapper">
-    <h3></h3>
-
-    <div class="overlay">
-        <canvas class="canvas" id="signatureCanvas1" width="450" height="100">
-        </canvas>
+    <div class="wrapper">
+        <h3>Signature App Demo</h3>
+        <div class="overlay">
+            <canvas class="canvas" id="signatureCanvas" width="450" height="100">
+            </canvas>
+        </div>
+        <button id="clrBtn" class="btn btn-lg btn-primary"><i class="fa fa-sticky-note"></i>Clear</button>
+        <button id="saveBtn" class="btn btn-lg btn-primary"><i class="fa fa-picture-o"></i>Save to PNG</button>
+        <div class="tool-tip">
+            <span>Click and hold left button to start drawing</span>
+        </div>
     </div>
+</section>
 
-    <button id="clrBtn1" class="btn btn-lg btn-primary">Clear</button>
-    <button id="saveBtn1" class="btn btn-lg btn-primary">Save</button>
-
-</div>
 
 <!--scripts-->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

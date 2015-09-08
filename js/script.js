@@ -43,9 +43,32 @@ Signature.prototype.saveSignature = function () {
 window.onload = function (){
     console.log('Loaded..');
 
+    showToolTip ();
+
     var signature = new Signature('signatureCanvas', '#37FF45'),
         $saveBtn = $('#saveBtn'),
-        $clrBtn = $('#clrBtn');
+        $clrBtn = $('#clrBtn'),
+        $toolTip = $('.tool-tip'),
+        isEnabled = true,
+        timeOut;
+
+
+    function showToolTip () {
+        timeOut = setTimeout(function() {
+            $toolTip.css('display', 'block');
+        }, 2000);
+    }
+
+    $(document).bind('mousemove', function() {
+        clearTimeout(timeOut);
+        if (isEnabled) {
+            showToolTip ();
+        }
+        $toolTip.css('display', 'none');
+
+    });
+
+
 
     signature.$elem.bind('mousedown', mouseDown.bind(signature));
     signature.$elem.bind('mouseup', mouseUp.bind(signature));
@@ -56,6 +79,8 @@ window.onload = function (){
 
 
     function mouseDown(event) {
+        isEnabled = false;
+        $toolTip.css('display', 'none');
         this.isMousePressed = true;
         this.ctx.moveTo(this.calcPos(event).X, this.calcPos(event).Y);
     }

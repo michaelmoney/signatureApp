@@ -1,1 +1,5 @@
 .idea/
+node-webkit-version/build/*
+node_modules
+npm-debug.log
+node-webkit-version/cache
